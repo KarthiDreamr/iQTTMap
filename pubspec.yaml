@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   mapbox_maps_flutter: ^0.5.1
   mqtt_client: ^10.1.0
+  workmanager: ^0.5.2
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
