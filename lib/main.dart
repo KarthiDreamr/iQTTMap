@@ -22,6 +22,7 @@ void main() {
   //         true // If enabled it will post a notification whenever the task is running. Handy for debugging tasks
   //     );
   // Workmanager().registerOneOffTask("task-identifier", "simpleTask");
+
   runApp(const MyApp());
 }
 

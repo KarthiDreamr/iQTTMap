@@ -33,10 +33,6 @@ class MapboxViewState extends State<MapboxView> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     lat = prefs.getString('lat') ?? "0.000000";
     lon = prefs.getString('lon') ?? "0.000000";
-
-    // if (lat.isNotEmpty && lon.isNotEmpty) {
-    //   // Update the map and move the pin here
-    // }
   }
 
   Future<void> connectAndSubscribe() async {
@@ -86,7 +82,7 @@ class MapboxViewState extends State<MapboxView> {
                       coordinates:
                       Position(double.parse(lon), double.parse(lat)))
                       .toJson(),
-                  zoom: 20,
+                  zoom: 18,
                   bearing: 180,
                   pitch: 30),
               MapAnimationOptions(duration: 2000, startDelay: 0));
