@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:workmanager/workmanager.dart';
 
 import 'client_actions.dart';
+import 'mapbox_view.dart';
 
 // @pragma(
 //     'vm:entry-point') // Mandatory if the App is obfuscated or using Flutter 3.1+
@@ -37,8 +38,9 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+
     return const MaterialApp(
-      home: ClientActions()
+      home: MapboxView()
     );
   }
 }
